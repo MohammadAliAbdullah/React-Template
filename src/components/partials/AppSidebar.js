@@ -1,7 +1,13 @@
 import React from 'react'
-// import navigation from '../../Nav'
+import { useSelector, useDispatch } from 'react-redux'
+import navigation from '../../Nav'
 
 const AppSidebar = () => {
+
+  const dispatch = useDispatch()
+  const unfoldable = useSelector((state) => state.sidebarUnfoldable)
+  const sidebarShow = useSelector((state) => state.sidebarShow)
+
   return (
     <div>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -34,7 +40,6 @@ const AppSidebar = () => {
           </div>
           {/* Sidebar Menu */}
           <nav className="mt-2">
-
             <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               {/* Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library */}

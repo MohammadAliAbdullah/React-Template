@@ -7,7 +7,7 @@ const nav = [
         as: NavLink,
         anchor: 'Dashboard',
         to: '/dashboard',
-        icon: <CIcon name="cil-speedometer" customClasses="nav-icon" />,
+        icon: 'nav-icon',
         badge: {
             color: 'info',
             text: 'NEW',
@@ -22,7 +22,7 @@ const nav = [
         as: NavLink,
         anchor: 'Set Up',
         to: '/to',
-        icon: <CIcon name="cil-puzzle" customClasses="nav-icon" />,
+        icon: 'nav-icon',
         items: [
           {
             _component: 'CNavItem',
