@@ -1,13 +1,12 @@
 import React from 'react'
 import { AppHeader, AppSidebar, AppBreadcrumb, AppContent, AppFooter } from '../components/partials/index'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const DefaultLayout = () => {
   return (
     <div className="wrapper">
       {/* Preloader */}
-      <div className="preloader flex-column justify-content-center align-items-center">
-        <img className="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height={60} width={60} />
-      </div>
+    
       {/* Navbar */}
       <AppHeader />
       {/* Main Sidebar Container */}
